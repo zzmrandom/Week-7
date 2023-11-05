@@ -52,12 +52,17 @@ main {
 }
 .weather-app-details {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   color: rgba(39, 33, 66, 0.4);
+  font-weight: 500;
 }
 
 .weather-app-details strong {
   color: #f65282;
+}
+
+.weather-app-temp-container {
+  display: flex;
 }
 
 footer {
