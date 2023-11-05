@@ -3,40 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/index.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="weather-app">
-    <header>
-      <form class="search-form">
-        <input type="search" placeholder="Enter a city.." required class="search-form-input"> 
-        <input type="submit" value="search" class="search-form-button">
-      </form>
-    </header>
-    <div>
-    <h1>London</h1>
-    <main>
-    <p>
-      Thursday 19:53, scattered clouds
-      <br>
-      Humidity:66%, Wind: 4.17km/h1
-    </p>
-    </div>
-    <div>🌧️ 11°C</div>
-</main>
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">London</h1>
+            <p class="weather-app-details">
+              Thursday 19:53, scattered clouds
+              <br />
+              Humidity:66%, Wind: 4.17km/h1
+            </p>
+          </div>
+          <div class="weather-app-temp">🌧️ 11°C</div>
+        </div>
+      </main>
 
-
-    <footer>
-      Built by
-      <a href="https://github.com/zzmrandom" target="_blank">Zacjulia M </a>
-      is open-sourced on
-      <a href="https://github.com/zzmrandom/Week-7" target="_blank"> GitHub</a> 
-      and hosted on
-      <a href="https://weatherapp-shecodes.netlify.app/" target="_blank">
-        Netlify
-      </a>
-    </footer>
+      <footer>
+        Built by
+        <a href="https://github.com/zzmrandom" target="_blank">Zacjulia M </a>
+        is open-sourced on
+        <a href="https://github.com/zzmrandom/Week-7" target="_blank">
+          GitHub</a
+        >
+        and hosted on
+        <a href="https://weatherapp-shecodes.netlify.app/" target="_blank">
+          Netlify
+        </a>
+      </footer>
     </div>
   </body>
 </html>
