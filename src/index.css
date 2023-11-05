@@ -50,6 +50,15 @@ main {
   font-size: 38px;
   line-height: 48px;
 }
+.weather-app-details {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.weather-app-details strong {
+  color: palevioletred;
+}
 
 footer {
   border-top: 1px solid yellow;
