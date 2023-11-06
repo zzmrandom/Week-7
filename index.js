@@ -6,7 +6,7 @@ function refreshWeather(response) {
 
   console.log(response.data.condition.description);
   cityElement.innerHTML = response.data.city;
-
+  descriptionElement.innerHTML = response.data.condition.description;
   tempElement.innerHTML = Math.round(temp);
 }
 function searchCity(city) {
