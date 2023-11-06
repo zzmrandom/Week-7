@@ -1,8 +1,8 @@
 function refreshWeather(response) {
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = response.data.temperature.current;
+  tempElement.innerHTML = Math.round(temperature);
 }
-
 function searchCity(city) {
   let apiKey = "dffcdc392abt6650ob84a0bfdbddfd86";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
