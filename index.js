@@ -1,7 +1,7 @@
 function refreshWeather(response) {
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = response.data.temperature.current;
-  tempElement.innerHTML = Math.round(temperature);
+  tempElement.innerHTML = Math.round(temp);
 }
 function searchCity(city) {
   let apiKey = "dffcdc392abt6650ob84a0bfdbddfd86";
