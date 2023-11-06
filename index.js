@@ -30,7 +30,7 @@ function formatDate(date) {
   ];
   let day = days[date.getDay()];
 
-  return `${days} ${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
 
 function searchCity(city) {
