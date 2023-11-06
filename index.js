@@ -10,14 +10,29 @@ function refreshWeather(response) {
 
   console.log(response.data.wind.speed);
   cityElement.innerHTML = response.data.city;
-  timeElement.innerHTML = `${date.getDay()},${date.getHours()}:${
-    date.getMinutes
-  },`;
+  timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   tempElement.innerHTML = Math.round(temp);
 }
+function formatDate(date) {
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = date[date.getDay()];
+
+  return `${day} ${hours} ${minutes}`;
+}
+
 function searchCity(city) {
   let apiKey = "dffcdc392abt6650ob84a0bfdbddfd86";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
