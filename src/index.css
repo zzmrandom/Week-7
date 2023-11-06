@@ -1,6 +1,7 @@
 body {
   background-color: #f9f7fe;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .weather-app {
@@ -29,7 +30,7 @@ a {
 }
 
 .search-form-button {
-  background-color: blue;
+  background-color: rgb(20, 20, 192);
   padding: 15px 30px;
   border: none;
   border-radius: 6px;
