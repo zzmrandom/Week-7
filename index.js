@@ -42,6 +42,12 @@ function searchCity(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(refreshWeather);
 }
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(function (position) {
+    searchLocation(position);
+  });
+}
 
 function handleSearchSubmit(event) {
   event.preventDefault();

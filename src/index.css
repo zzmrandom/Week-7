@@ -39,6 +39,11 @@ a {
   font-size: 16px;
 }
 
+#current-location-button {
+  background-color: #ffd5ab;
+  border-color: #ffd5ab;
+  transition: all 200ms ease-in-out;
+}
 main {
   padding: 30px 0;
 }
