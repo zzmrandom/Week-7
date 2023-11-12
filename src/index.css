@@ -24,7 +24,7 @@ a {
   background-color: #f9f7fe;
   border: none;
   border-radius: 6px;
-  width: 80%;
+  width: 60%;
   padding: 15px 18px;
   font-size: 16px;
 }
@@ -39,7 +39,11 @@ a {
   font-size: 16px;
 }
 
-#current-location-button {
+.current-location-button {
+  padding: 15px 28px;
+  border: none;
+  border-radius: 6px;
+  color: white;
   background-color: #ffd5ab;
   border-color: #ffd5ab;
   transition: all 200ms ease-in-out;
