@@ -42,12 +42,6 @@ function searchCity(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(refreshWeather);
 }
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(function (position) {
-    searchLocation(position);
-  });
-}
 
 function handleSearchSubmit(event) {
   event.preventDefault();
@@ -56,16 +50,15 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(function (position) {
+    searchLocation(position);
+  });
+}
+
 let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener(
-  "submit",
-  handleSearchSubmit,
-  function (event) {
-    event.preventDefault();
-    let searchformInput = document.getElementById("search-form-input");
-    searchCity(searchformInput.value);
-  }
-);
+searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 let currentLocationButton = document.getElementById("current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
