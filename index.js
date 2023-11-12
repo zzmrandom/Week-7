@@ -63,4 +63,7 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-searchCity("London");
+document.addEventListener("DOMContentLoaded", function () {
+  // Initial data load, e.g., for London
+  searchCity("London");
+});
