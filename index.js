@@ -57,9 +57,6 @@ function getCurrentLocation(event) {
   });
 }
 
-let currentLocationButton = document.getElementById("current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
-
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 //f9f7fe background color
