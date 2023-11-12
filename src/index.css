@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #b7472a;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  border-bottom: 1px solid yellow;
+  border-bottom: 1px solid #b7472a;
   padding: 0 0 30px 0;
 }
 a {
@@ -102,7 +102,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid yellow;
+  border-top: 1px solid;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 13.5px;
