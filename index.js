@@ -57,7 +57,15 @@ function handleSearchSubmit(event) {
 }
 
 let searchFormElement = document.querySelector("#search-form");
-searchFormElement.addEventListener("submit", handleSearchSubmit);
+searchFormElement.addEventListener(
+  "submit",
+  handleSearchSubmit,
+  function (event) {
+    event.preventDefault();
+    let searchformInput = document.getElementById("search-form-input");
+    searchCity(searchformInput.value);
+  }
+);
 
 let currentLocationButton = document.getElementById("current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
